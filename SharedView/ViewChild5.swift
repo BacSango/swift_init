@@ -8,12 +8,11 @@
 import SwiftUI
 
 struct ViewChild5: View {
-    let onButtonPress: (Int) -> Void
-    @Binding var count: Int
+    let onButtonPress: () -> Void
+    
     var body: some View {
         Button("Reduce from child 2"){
-            count -= 1
-            onButtonPress(count)
+            onButtonPress()
         }
         .buttonStyle(.borderedProminent)
     }

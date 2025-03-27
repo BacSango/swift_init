@@ -66,7 +66,7 @@ struct ContentView: View {
             
             // c2: Closures
             Text("View 5: ")
-            ViewChild5(onButtonPress: handleButtonPress, count: $count)
+            ViewChild5(onButtonPress: handleButtonPress)
             
             // c3: ObservedObject
             Text("View 6: ")
@@ -80,8 +80,8 @@ struct ContentView: View {
         .padding()
     }
     
-    private func handleButtonPress(value: Int) {
-        count = value
+    private func handleButtonPress() {
+        count -= 1
     }
 }
 
