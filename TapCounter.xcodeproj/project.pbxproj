@@ -6,6 +6,11 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		A29B3CCD2D98FBE8004150C2 /* FirebaseAnalytics in Frameworks */ = {isa = PBXBuildFile; productRef = A29B3CCC2D98FBE8004150C2 /* FirebaseAnalytics */; };
+		A29B3CCF2D98FBE8004150C2 /* FirebaseDatabase in Frameworks */ = {isa = PBXBuildFile; productRef = A29B3CCE2D98FBE8004150C2 /* FirebaseDatabase */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXContainerItemProxy section */
 		A2A52C1E2D89243200D377CD /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -52,6 +57,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A29B3CCF2D98FBE8004150C2 /* FirebaseDatabase in Frameworks */,
+				A29B3CCD2D98FBE8004150C2 /* FirebaseAnalytics in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -112,6 +119,8 @@
 			);
 			name = TapCounter;
 			packageProductDependencies = (
+				A29B3CCC2D98FBE8004150C2 /* FirebaseAnalytics */,
+				A29B3CCE2D98FBE8004150C2 /* FirebaseDatabase */,
 			);
 			productName = TapCounter;
 			productReference = A2A52C0D2D89243100D377CD /* TapCounter.app */;
@@ -195,6 +204,9 @@
 			);
 			mainGroup = A2A52C042D89243100D377CD;
 			minimizedProjectReferenceProxies = 1;
+			packageReferences = (
+				A29B3CCB2D98FBE8004150C2 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
+			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = A2A52C0E2D89243100D377CD /* Products */;
 			projectDirPath = "";
@@ -552,6 +564,30 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		A29B3CCB2D98FBE8004150C2 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/firebase/firebase-ios-sdk";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 11.10.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		A29B3CCC2D98FBE8004150C2 /* FirebaseAnalytics */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = A29B3CCB2D98FBE8004150C2 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAnalytics;
+		};
+		A29B3CCE2D98FBE8004150C2 /* FirebaseDatabase */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = A29B3CCB2D98FBE8004150C2 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseDatabase;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = A2A52C052D89243100D377CD /* Project object */;
 }

@@ -11,7 +11,7 @@ import SwiftUI
 struct TapCounterApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            FirebaseBasic()
         }
     }
 }
