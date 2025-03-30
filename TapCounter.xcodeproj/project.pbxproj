@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A27E1BF52D9935AB00490905 /* FirebaseFirestore in Frameworks */ = {isa = PBXBuildFile; productRef = A27E1BF42D9935AB00490905 /* FirebaseFirestore */; };
 		A29B3CCD2D98FBE8004150C2 /* FirebaseAnalytics in Frameworks */ = {isa = PBXBuildFile; productRef = A29B3CCC2D98FBE8004150C2 /* FirebaseAnalytics */; };
 		A29B3CCF2D98FBE8004150C2 /* FirebaseDatabase in Frameworks */ = {isa = PBXBuildFile; productRef = A29B3CCE2D98FBE8004150C2 /* FirebaseDatabase */; };
 /* End PBXBuildFile section */
@@ -59,6 +60,7 @@
 			files = (
 				A29B3CCF2D98FBE8004150C2 /* FirebaseDatabase in Frameworks */,
 				A29B3CCD2D98FBE8004150C2 /* FirebaseAnalytics in Frameworks */,
+				A27E1BF52D9935AB00490905 /* FirebaseFirestore in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -79,12 +81,20 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		A27E1BF32D9935AB00490905 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		A2A52C042D89243100D377CD = {
 			isa = PBXGroup;
 			children = (
 				A2A52C0F2D89243100D377CD /* TapCounter */,
 				A2A52C202D89243200D377CD /* TapCounterTests */,
 				A2A52C2A2D89243200D377CD /* TapCounterUITests */,
+				A27E1BF32D9935AB00490905 /* Frameworks */,
 				A2A52C0E2D89243100D377CD /* Products */,
 			);
 			sourceTree = "<group>";
@@ -121,6 +131,7 @@
 			packageProductDependencies = (
 				A29B3CCC2D98FBE8004150C2 /* FirebaseAnalytics */,
 				A29B3CCE2D98FBE8004150C2 /* FirebaseDatabase */,
+				A27E1BF42D9935AB00490905 /* FirebaseFirestore */,
 			);
 			productName = TapCounter;
 			productReference = A2A52C0D2D89243100D377CD /* TapCounter.app */;
@@ -577,6 +588,11 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
+		A27E1BF42D9935AB00490905 /* FirebaseFirestore */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = A29B3CCB2D98FBE8004150C2 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseFirestore;
+		};
 		A29B3CCC2D98FBE8004150C2 /* FirebaseAnalytics */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = A29B3CCB2D98FBE8004150C2 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
